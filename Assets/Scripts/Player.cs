@@ -2,14 +2,17 @@ using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using TMPro;
 
 public class Player : MonoBehaviour
 {
     public float speed = 3f;
+    public int lvl = 1;
     public int health = 5;
     public int damage = 1;
     public int keys = 0; //  ���� �� ����
     private GameObject animatedPlayer;
+
 
     private Rigidbody2D rb;
     private SpriteRenderer sprite;
