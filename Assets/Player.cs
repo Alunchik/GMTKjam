@@ -23,5 +23,10 @@ public class Player : MonoBehaviour
     void Update()
     {
             rb.velocity = new Vector2(Input.GetAxis("Horizontal"), Input.GetAxis("Vertical")).normalized * speed;
+            if(Input.GetKey("r"))
+            {
+            Dice.rolling = true;
+        }
+
     }
 }
