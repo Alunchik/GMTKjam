@@ -9,7 +9,7 @@ public class Player : MonoBehaviour
     [SerializeField] protected int health = 5;
     [SerializeField] protected int damage = 1;
     [SerializeField] protected int keys = 0; //  ���� �� ����
-    [SerializeField] private GameObject animatedPlayer;
+    private GameObject animatedPlayer;
 
     private Rigidbody2D rb;
     private SpriteRenderer sprite;
@@ -20,6 +20,7 @@ public class Player : MonoBehaviour
     void Start()
     {
         rb = GetComponent<Rigidbody2D>();
+        animatedPlayer = transform.GetChild(0).gameObject;
         animator = animatedPlayer.GetComponent<Animator>();
 
     }
