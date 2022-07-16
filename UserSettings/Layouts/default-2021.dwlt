@@ -390,7 +390,7 @@ MonoBehaviour:
   m_LastFolders:
   - Assets/Prephabs
   m_LastFoldersGridSize: -1
-  m_LastProjectPath: "C:\\Users\\\u0414\u0435\u043D\u0438\u0441 \u041F\u0435\u0442\u0440\u0435\u043D\u043A\u043E\\Documents\\GitHub\\GMTKjam"
+  m_LastProjectPath: C:\Users\Foxxy\Desktop\GMTKjam
   m_LockTracker:
     m_IsLocked: 0
   m_FolderTreeState:
@@ -512,7 +512,7 @@ MonoBehaviour:
   m_ObjectsLockedBeforeSerialization: []
   m_InstanceIDsLockedBeforeSerialization: 
   m_PreviewResizer:
-    m_CachedPref: 160
+    m_CachedPref: 164
     m_ControlHash: -371814159
     m_PrefName: Preview_InspectorPreview
   m_LastInspectedObjectInstanceID: -1
