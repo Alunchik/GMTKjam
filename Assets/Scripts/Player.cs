@@ -5,10 +5,10 @@ using UnityEngine;
 
 public class Player : MonoBehaviour
 {
-    [SerializeField] protected float speed = 3f;
-    [SerializeField] protected int health = 5;
-    [SerializeField] protected int damage = 1;
-    [SerializeField] protected int keys = 0; //  ���� �� ����
+    public float speed = 3f;
+    public int health = 5;
+    public int damage = 1;
+    public int keys = 0; //  ���� �� ����
     private GameObject animatedPlayer;
 
     private Rigidbody2D rb;
