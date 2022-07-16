@@ -4,6 +4,8 @@ using UnityEngine;
 
 public class Dice : MonoBehaviour
 {
+    [SerializeField] private GameObject arrowStorm;
+    
     [SerializeField] private float intervalTime = 0.3f;
     [SerializeField] private int intervalNumber = 5;
     public static bool rolling = false;
@@ -29,7 +31,7 @@ public class Dice : MonoBehaviour
         sr = transform.GetChild(0).GetComponent<SpriteRenderer>();
 
         GameObject keysManager = GameObject.Find("Keys");
-        keys = keysManager.GetComponent<Characteristics>(); //находим скрипт который отвечает за ключи
+        keys = keysManager.GetComponent<Characteristics>(); //пїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅ пїЅпїЅпїЅпїЅпїЅ
         GameObject strengthManager = GameObject.Find("Strength");
         strength = strengthManager.GetComponent<Characteristics>();
         GameObject speedManager = GameObject.Find("Speed");
@@ -50,7 +52,7 @@ public class Dice : MonoBehaviour
     {
         if (rolling == true)
         {
-            if (intervalCounter < intervalNumber) // смена анимаций пока кубик крутится и таймер
+            if (intervalCounter < intervalNumber) // пїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅ пїЅпїЅпїЅпїЅпїЅпїЅ
             {
                 if (timer > intervalTime)
                 {
@@ -71,30 +73,37 @@ public class Dice : MonoBehaviour
                     timer += Time.deltaTime;
                 }
             }
-            else // логика, когда кубик докрутился
+            else // пїЅпїЅпїЅпїЅпїЅпїЅ, пїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ
             {
                 intervalCounter = 0;
                 rolling = false;
                 switch(currentFace)
                 {
-                    case 1: // грань с ключами
+                    case 1: // пїЅпїЅпїЅпїЅпїЅ пїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅ
                         keys.amount += 1;
                         player.keys += 1;
                         break;
-                    case 2: // грань с увеличением силы
+                    case 2: // пїЅпїЅпїЅпїЅпїЅ пїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅ
                         strength.amount += 1;
                         player.damage += 1;
                         break;
-                    case 3: // грань с увеличением скорости
+                    case 3: // пїЅпїЅпїЅпїЅпїЅ пїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ
                         speed.amount += 1;
                         player.speed += 1.5f;
                         break;
-                    case 4: // грань с уменьшением скорости
+                    case 4: // пїЅпїЅпїЅпїЅпїЅ пїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ
                         if (player.speed >= 6.5f)
                         {
                             player.speed -= 1.5f;
                             speed.amount -= 1;
                         }
+                        break;
+                    case 5:
+                        break;
+                    case 6:
+                        Instantiate(arrowStorm, Vector3.zero, Quaternion.identity);
+                        break;
+                    case 7:
                         break;
                 }
             }
