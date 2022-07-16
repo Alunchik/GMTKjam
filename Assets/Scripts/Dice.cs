@@ -16,12 +16,23 @@ public class Dice : MonoBehaviour
     private int currentFace = 0;
     private System.Random rand = new System.Random();
 
+    Characteristics keys;
+    Characteristics strength;
+    Characteristics speed;
+
 
     private Sprite[] faces = { };
 
     void Start()
     {
         sr = transform.GetChild(0).GetComponent<SpriteRenderer>();
+
+        GameObject keysManager = GameObject.Find("Keys");
+        keys = keysManager.GetComponent<Characteristics>(); //находим скрипт который отвечает за ключи
+        GameObject strengthManager = GameObject.Find("Strength");
+        strength = strengthManager.GetComponent<Characteristics>();
+        GameObject speedManager = GameObject.Find("Speed");
+        speed = speedManager.GetComponent<Characteristics>();
     }
 
     void Update()
@@ -61,6 +72,18 @@ public class Dice : MonoBehaviour
             {
                 intervalCounter = 0;
                 rolling = false;
+                switch(currentFace)
+                {
+                    case 1: // грань с ключами
+                        keys.amount += 1;
+                        break;
+                    case 2: // грань с увеличением силы
+                        strength.amount += 1;
+                        break;
+                    case 3: // грань с увеличением скорости
+                        speed.amount += 1;
+                        break;
+                }
             }
         }
     }
