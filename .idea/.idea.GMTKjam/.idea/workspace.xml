@@ -6,11 +6,14 @@
   <component name="ChangeListManager">
     <list default="true" id="0273ac4c-1303-4cb4-9b70-436220f1a51b" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.GMTKjam/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.GMTKjam/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prephabs/Arrow.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prephabs/Arrow.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Animations/Shoot.anim" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Animations/Shoot.anim" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Animations/ShootingMonsterAnimated.controller" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Animations/ShootingMonsterAnimated.controller" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prephabs/monsterOcto.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prephabs/monsterOcto.prefab" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scenes/SampleScene.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/SampleScene.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/MonsterOctoAi.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/MonsterOctoAi.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/EnemyHPSystem.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/EnemyHPSystem.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Player.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Player.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/Projectile.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Projectile.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Sprites/gmtkGraphics1.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Sprites/gmtkGraphics1.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProjectSettings/TagManager.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/TagManager.asset" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/UserSettings/EditorUserSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/UserSettings/EditorUserSettings.asset" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/UserSettings/Layouts/default-2021.dwlt" beforeDir="false" afterPath="$PROJECT_DIR$/UserSettings/Layouts/default-2021.dwlt" afterDir="false" />
     </list>
@@ -88,6 +91,7 @@
       <workItem from="1657964010353" duration="759000" />
       <workItem from="1657969413486" duration="6888000" />
       <workItem from="1657982842806" duration="4623000" />
+      <workItem from="1657990246483" duration="3680000" />
     </task>
     <servers />
   </component>

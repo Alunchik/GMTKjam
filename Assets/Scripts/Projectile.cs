@@ -9,6 +9,7 @@ public class Projectile : MonoBehaviour
     public float damage;
     public float speed;
     private Rigidbody2D rb;
+    public bool enemy;
     void Start()
     {
         rb = GetComponent<Rigidbody2D>();
@@ -21,7 +22,9 @@ public class Projectile : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D other)
     {
-        if(other.CompareTag("Player") || other.CompareTag("Finish")) 
+        if(!enemy && (other.CompareTag("Player") || other.CompareTag("Finish")))
+            return;
+        if(enemy &&(other.CompareTag("Enemy") || other.CompareTag("Finish")))
             return;
         Destroy(gameObject);
     }

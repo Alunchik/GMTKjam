@@ -6,26 +6,30 @@ using UnityEngine;
 public class EnemyHPSystem : MonoBehaviour
 {
     public float hp;
-    private SpriteRenderer sr;
+    private SpriteRenderer[] sr;
+    private SpriteRenderer srH;
     [SerializeField] private float colorDelay;
     [SerializeField] private Color damageColor;
-    private Color defaultColor;
-    
+    [SerializeField] private Color defaultColor;
+
 
     private void Start()
     {
-        sr = GetComponent<SpriteRenderer>();
-        var color = sr.color;
-        defaultColor = new Color(color.r, color.g, color.b, color.a);
+        srH = GetComponent<SpriteRenderer>();
+        sr = GetComponentsInChildren<SpriteRenderer>();
     }
     private void OnTriggerEnter2D(Collider2D other)
     {
 
         var projectile = other.GetComponent<Projectile>();
-        if (projectile)
+        if (projectile && !projectile.enemy)
         {
             hp -= projectile.damage;
-            sr.color = damageColor;
+            foreach (var renderer in sr)
+            {
+                renderer.color = damageColor;
+            }
+            if (srH) srH.color = damageColor;
             StartCoroutine(ReturnNormalColor());
             if (hp <= 0f)
             {
@@ -36,6 +40,10 @@ public class EnemyHPSystem : MonoBehaviour
     IEnumerator ReturnNormalColor()
     {
         yield return new WaitForSeconds(colorDelay);
-        sr.color = defaultColor;
+        foreach (var renderer in sr)
+        {
+            renderer.color = defaultColor;
+        }
+        if (srH) srH.color = defaultColor;
     }
 }

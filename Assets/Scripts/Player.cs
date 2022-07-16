@@ -27,6 +27,11 @@ public class Player : MonoBehaviour
 
     private void Update()
     {
+        if (health <= 0)
+        {
+            Destroy(gameObject);
+        }
+        
         if (rb.velocity.magnitude < 0.1f && animator.GetBool("isRunning"))
         {
             animator.SetBool("isRunning", false);
@@ -46,5 +51,22 @@ public class Player : MonoBehaviour
     void FixedUpdate()
     {
         rb.velocity = new Vector2(Input.GetAxisRaw("Horizontal"), Input.GetAxisRaw("Vertical")).normalized * speed;
+    }
+
+    private void OnTriggerEnter2D(Collider2D col)
+    {
+        var projectile = col.gameObject.GetComponent<Projectile>();
+        if (projectile && projectile.enemy)
+        {
+            health -= (int)projectile.damage;
+        }
+    }
+
+    private void OnCollisionEnter2D(Collision2D col)
+    {
+        if (col.gameObject.CompareTag("Enemy"))
+        {
+            health--;
+        }
     }
 }
