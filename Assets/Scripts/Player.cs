@@ -34,6 +34,11 @@ public class Player : MonoBehaviour
         {
             animator.SetBool("isRunning", true);
         }
+
+        if((Input.GetKey("r")) && (Dice.rolling == false))
+        {
+            Dice.rolling = true;
+        }
         
     }
     
