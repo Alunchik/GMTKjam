@@ -696,8 +696,12 @@ MonoBehaviour:
   health: 20
   damage: 1
   keys: 0
+  dyingScriptObj: {fileID: 0}
+  winingScriptObj: {fileID: 0}
   hint: {fileID: 0}
   lvlTextObj: {fileID: 0}
+  keysTextObj: {fileID: 0}
+  healthManager: {fileID: 0}
 --- !u!4 &265464390
 Transform:
   m_ObjectHideFlags: 0
@@ -2429,8 +2433,12 @@ MonoBehaviour:
   health: 5
   damage: 1
   keys: 0
+  dyingScriptObj: {fileID: 0}
+  winingScriptObj: {fileID: 0}
   hint: {fileID: 0}
   lvlTextObj: {fileID: 0}
+  keysTextObj: {fileID: 0}
+  healthManager: {fileID: 0}
 --- !u!212 &960007712
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -4125,6 +4133,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   arrowStorm: {fileID: 7262841495970213348, guid: f47d73202a851894187a6c9cbbd8dc91, type: 3}
   monsterOcto: {fileID: 671881555803483812, guid: 40439aee71d8a4c41af4a7b38fcea22b, type: 3}
+  saw: {fileID: 0}
+  meteorRain: {fileID: 0}
+  shootingMonsters: {fileID: 0}
+  trap: {fileID: 0}
+  shootPoint: {fileID: 0}
   intervalTime: 0.1
   intervalNumber: 10
 --- !u!212 &2038923200
