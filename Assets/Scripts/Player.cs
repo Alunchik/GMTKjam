@@ -15,26 +15,37 @@ public class Player : MonoBehaviour
     public int keys = 0; //  ���� �� ����
     private GameObject animatedPlayer;
 
+    public GameObject dyingScriptObj;
 
     private Rigidbody2D rb;
     private SpriteRenderer sprite;
 
     private Text lvltext;
+    private Text keytext;
     private Text goaltext;
+    private Die dyingScript;
+
 
     public GameObject hint;
     public GameObject lvlTextObj;
+    public GameObject keysTextObj;
+    public GameObject healthManager;
 
     private Animator animator;
+    private Characteristics healthViewer;
 
     // Start is called before the first frame update
     void Start()
     {
         rb = GetComponent<Rigidbody2D>();
         lvltext = lvlTextObj.GetComponent<Text>();
+        keytext = keysTextObj.GetComponent<Text>();
         animatedPlayer = transform.GetChild(0).gameObject;
         animator = animatedPlayer.GetComponent<Animator>();
-        
+        healthViewer = healthManager.GetComponent<Characteristics>();
+        dyingScript = dyingScriptObj.GetComponent<Die>();
+
+        keytext.text = "Keys needed: " + keysRequired;
         if (lvl == 0)
         {
             hint.SetActive(true);
@@ -50,9 +61,12 @@ public class Player : MonoBehaviour
 
     private void Update()
     {
-        if (health <= 0)
+        if (health <= 0) // смерть
         {
-            Destroy(gameObject);
+            //Destroy(gameObject);
+            //gameObject.SetActive(false);
+            dyingScript.isDied = true;
+
         }
         
         if (rb.velocity.magnitude < 0.1f && animator.GetBool("isRunning"))
@@ -68,7 +82,7 @@ public class Player : MonoBehaviour
         {
             Dice.rolling = true;
         }
-        
+        healthViewer.amount = health;
     }
     
     void FixedUpdate()
