@@ -20,17 +20,21 @@ public class Meteor : MonoBehaviour
     private Vector3 eScale;
     private Vector3 stoneStartPos;
     private float timePassed;
+    public float size;
     
     void Start()
     {
+        size = GetComponentInParent<MeteorRain>().size;
         timePassed = 0;
         stoneStartPos = new Vector3(transform.position.x, transform.position.y + fallHeight, 0f);
         stone = Instantiate(stoneRef, stoneStartPos, Quaternion.identity);
+        stone.transform.localScale = size * Vector3.one;
+        hitRadius *= size;
         shadow = Instantiate(shadowRef, transform);
         shadowRenderer = shadow.GetComponent<SpriteRenderer>();
         shadowRenderer.color = startShadowColor;
         sScale = new Vector3(startShadowScale, startShadowScale, startShadowScale);
-        eScale = new Vector3(endShadowScale, endShadowScale, endShadowScale);
+        eScale = new Vector3(endShadowScale, endShadowScale, endShadowScale) * size;
         shadow.transform.localScale = sScale;
     }
     
@@ -42,13 +46,18 @@ public class Meteor : MonoBehaviour
         stone.transform.position = Vector3.Lerp(stoneStartPos, transform.position, timePassed / fallDelay);
         if (timePassed >= fallDelay)
         {
-            var player = GameObject.Find("Player").GetComponent<Player>();
-            Vector2 playerPos = player.transform.position;
-            Vector2 meteorPos = transform.position;
-            if ((playerPos - meteorPos).magnitude <= hitRadius)
+            var playerGO = GameObject.Find("Player");
+            if (playerGO)
             {
-                player.health = 0;
+                var player = playerGO.GetComponent<Player>();
+                Vector2 playerPos = player.transform.position;
+                Vector2 meteorPos = transform.position;
+                if ((playerPos - meteorPos).magnitude <= hitRadius)
+                {
+                    player.health = 0;
+                }
             }
+
             Destroy(stone);
             Destroy(gameObject);
             
