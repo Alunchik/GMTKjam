@@ -24,17 +24,22 @@ public class EnemyHPSystem : MonoBehaviour
         var projectile = other.GetComponent<Projectile>();
         if (projectile && !projectile.enemy)
         {
-            hp -= projectile.damage;
-            foreach (var renderer in sr)
-            {
-                renderer.color = damageColor;
-            }
-            if (srH) srH.color = damageColor;
-            StartCoroutine(ReturnNormalColor());
-            if (hp <= 0f)
-            {
-                Destroy(gameObject);
-            }
+           TakeDamage(projectile.damage);
+        }
+    }
+
+    public void TakeDamage(float damage)
+    {
+        hp -= damage;
+        foreach (var renderer in sr)
+        {
+            renderer.color = damageColor;
+        }
+        if (srH) srH.color = damageColor;
+        StartCoroutine(ReturnNormalColor());
+        if (hp <= 0f)
+        {
+            Destroy(gameObject);
         }
     }
     IEnumerator ReturnNormalColor()
