@@ -2,12 +2,14 @@ using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using TMPro;
+using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 
 public class Player : MonoBehaviour
 {
     public float speed = 3f;
-    public int lvl = 1;
+    public static int lvl = 1;
+    public static int keysRequired = 1;
     public int health = 5;
     public int damage = 1;
     public int keys = 0; //  ���� �� ����
@@ -16,16 +18,20 @@ public class Player : MonoBehaviour
 
     private Rigidbody2D rb;
     private SpriteRenderer sprite;
-    
+
+    private Text lvltext;
+    private Text goaltext;
+
     private Animator animator;
 
     // Start is called before the first frame update
     void Start()
     {
         rb = GetComponent<Rigidbody2D>();
+        lvltext = GameObject.Find("LVL").GetComponent<Text>();
         animatedPlayer = transform.GetChild(0).gameObject;
         animator = animatedPlayer.GetComponent<Animator>();
-
+        lvltext.text = "LVL" + lvl;
     }
 
     private void Update()
@@ -63,6 +69,29 @@ public class Player : MonoBehaviour
         {
             health -= (int)projectile.damage;
         }
+
+        if (col.CompareTag("Door") && keys >= keysRequired) // переход на след. уровень
+        { 
+        keys = 0;
+        lvl += 1;
+        switch (lvl) // расчет кол-ва требуемых ключей на следующем уровне
+        {
+            case 3:
+                keysRequired += 1;
+                break;
+            case 5:
+                keysRequired += 1;
+                break;
+            case 7:
+                keysRequired += 1;
+                break;
+            default:
+                break;
+        }
+        Scene scene = SceneManager.GetActiveScene(); // перезапускаем текущую сцену
+        SceneManager.LoadScene(scene.name);
+            }
+
     }
 
     private void OnCollisionEnter2D(Collision2D col)
