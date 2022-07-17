@@ -6,10 +6,6 @@
   <component name="ChangeListManager">
     <list default="true" id="0273ac4c-1303-4cb4-9b70-436220f1a51b" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.GMTKjam/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.GMTKjam/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prephabs/MeteorStrike.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prephabs/MeteorStrike.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prephabs/meteorStone.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prephabs/meteorStone.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Meteor.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Meteor.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Player.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Player.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -21,6 +17,7 @@
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/MeteorRain.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/MonsterOctoAi.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/MonsterShooting.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/SpawningEnemy.cs" root0="FORCE_HIGHLIGHTING" />
   </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
