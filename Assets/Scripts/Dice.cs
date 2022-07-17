@@ -9,6 +9,8 @@ public class Dice : MonoBehaviour
     [SerializeField] private GameObject saw;
     [SerializeField] private GameObject meteorRain;
     [SerializeField] private GameObject shootingMonsters;
+    [SerializeField] private GameObject trap;
+    [SerializeField] private GameObject shootPoint;
 
     [SerializeField] private float intervalTime = 0.3f;
     [SerializeField] private int intervalNumber = 5;
@@ -64,7 +66,7 @@ public class Dice : MonoBehaviour
                     int old = currentFace;
                     while(currentFace==old)
                     {
-                        currentFace = rand.Next(1, 11); 
+                        currentFace = rand.Next(1, 12); 
                     }
                     SpriteRenderer srNew = transform.GetChild(currentFace).GetComponent<SpriteRenderer>();
                     sr.enabled = false;
@@ -103,6 +105,7 @@ public class Dice : MonoBehaviour
                         }
                         break;
                     case 5:
+                        Instantiate(trap, Vector3.zero, Quaternion.identity);
                         break;
                     case 6:
                         Instantiate(arrowStorm, Vector3.zero, Quaternion.identity);
@@ -118,6 +121,10 @@ public class Dice : MonoBehaviour
                         break;
                     case 10:
                         Instantiate(shootingMonsters, Vector3.zero, Quaternion.identity);
+                        break;
+                    case 11:
+                        Shooting shooting = shootPoint.GetComponent<Shooting>();
+                        shooting.tripple = true;
                         break;
                 }
             }

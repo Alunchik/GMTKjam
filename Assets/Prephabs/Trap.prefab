@@ -96,8 +96,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   safeZone: 2
-  maxX: 10
-  maxY: 5
+  maxX: 3.5
+  maxY: 4.5
 --- !u!1 &2526961598003451384
 GameObject:
   m_ObjectHideFlags: 0
