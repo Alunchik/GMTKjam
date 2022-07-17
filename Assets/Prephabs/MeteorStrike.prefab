@@ -49,7 +49,7 @@ MonoBehaviour:
   startShadowColor: {r: 0.16981131, g: 0.16981131, b: 0.16981131, a: 0.0627451}
   endShadowColor: {r: 0.1509434, g: 0.1509434, b: 0.1509434, a: 0.5882353}
   startShadowScale: 0.1
-  endShadowScale: 1
+  endShadowScale: 2
   fallDelay: 1
   hitRadius: 1
   fallHeight: 30
