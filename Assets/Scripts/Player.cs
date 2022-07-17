@@ -108,8 +108,8 @@ public class Player : MonoBehaviour
         switch (lvl) // расчет кол-ва требуемых ключей на следующем уровне
         {
             case 3:
-                    keysRequired += 1;
-                    break;
+                keysRequired += 1;
+                break;
                 case 5:
                 keysRequired += 1;
                 break;
@@ -118,12 +118,12 @@ public class Player : MonoBehaviour
                 break;
             case 8:
                  keysRequired += 1;
-                    break;
+                 break;
             case 9:
-                    keysRequired += 1;
-                    break;
-                default:
-                    break;
+                keysRequired += 1;
+                break;
+            default:
+                break;
             }
         Scene scene = SceneManager.GetActiveScene(); // перезапускаем текущую сцену
         SceneManager.LoadScene(scene.name);

@@ -28,7 +28,7 @@ public class Saw : MonoBehaviour
         }
 
         transform.position = spawnPos;
-        speed = Random.Range(minSpeed, maxSpeed);
+        speed = Random.Range(minSpeed, maxSpeed + 1.5f * Player.lvl);
         angularSpeed = Random.Range(minAngularSpeed, maxAngularSpeed);
         rb = GetComponent<Rigidbody2D>();
         moveDir = new Vector2(Random.Range(-1, 1), Random.Range(-1, 1)).normalized * speed;
