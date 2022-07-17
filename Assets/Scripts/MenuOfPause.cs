@@ -49,11 +49,11 @@ public class MenuOfPause : MonoBehaviour
                 light.intensity = 1;
                 if (Player.lvl==0)
                 {
-                    Player.lvl = 1;
+                    Player.lvl = 0;
                 }
                 else
                 {
-                    Player.lvl = 0;
+                    Player.lvl = 1;
                 }
                 Player.keysRequired = 0;
                 Scene scene = SceneManager.GetActiveScene();
