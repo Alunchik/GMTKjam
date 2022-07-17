@@ -52,6 +52,8 @@ MonoBehaviour:
   minAngularSpeed: 100
   maxAngularSpeed: 200
   safeZone: 3
+  maxX: 5
+  maxY: 3.5
 --- !u!58 &8844814366764201635
 CircleCollider2D:
   m_ObjectHideFlags: 0
