@@ -8,7 +8,7 @@ using UnityEngine.SceneManagement;
 public class Player : MonoBehaviour
 {
     public float speed = 3f;
-    public static int lvl = 1;
+    public static int lvl = 0;
     public static int keysRequired = 1;
     public int health = 5;
     public int damage = 1;
@@ -22,16 +22,29 @@ public class Player : MonoBehaviour
     private Text lvltext;
     private Text goaltext;
 
+    public GameObject hint;
+    public GameObject lvlTextObj;
+
     private Animator animator;
 
     // Start is called before the first frame update
     void Start()
     {
         rb = GetComponent<Rigidbody2D>();
-        lvltext = GameObject.Find("LVL").GetComponent<Text>();
+        lvltext = lvlTextObj.GetComponent<Text>();
         animatedPlayer = transform.GetChild(0).gameObject;
         animator = animatedPlayer.GetComponent<Animator>();
-        lvltext.text = "LVL" + lvl;
+        if (lvl == 0)
+        {
+            hint.SetActive(true);
+            lvltext.enabled = false;
+        }
+        else
+        {
+            hint.SetActive(false);
+            lvltext.enabled = true;
+            lvltext.text = "LVL" + lvl;
+        }
     }
 
     private void Update()
