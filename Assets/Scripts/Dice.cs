@@ -5,7 +5,11 @@ using UnityEngine;
 public class Dice : MonoBehaviour
 {
     [SerializeField] private GameObject arrowStorm;
-    
+    [SerializeField] private GameObject monsterOcto;
+    [SerializeField] private GameObject saw;
+    [SerializeField] private GameObject meteorRain;
+    [SerializeField] private GameObject shootingMonsters;
+
     [SerializeField] private float intervalTime = 0.3f;
     [SerializeField] private int intervalNumber = 5;
     public static bool rolling = false;
@@ -60,7 +64,7 @@ public class Dice : MonoBehaviour
                     int old = currentFace;
                     while(currentFace==old)
                     {
-                        currentFace = rand.Next(1, 7); 
+                        currentFace = rand.Next(1, 11); 
                     }
                     SpriteRenderer srNew = transform.GetChild(currentFace).GetComponent<SpriteRenderer>();
                     sr.enabled = false;
@@ -104,6 +108,16 @@ public class Dice : MonoBehaviour
                         Instantiate(arrowStorm, Vector3.zero, Quaternion.identity);
                         break;
                     case 7:
+                        Instantiate(monsterOcto, Vector3.zero, Quaternion.identity);
+                        break;
+                    case 8:
+                        Instantiate(saw, Vector3.zero, Quaternion.identity);
+                        break;
+                    case 9:
+                        Instantiate(meteorRain, Vector3.zero, Quaternion.identity);
+                        break;
+                    case 10:
+                        Instantiate(shootingMonsters, Vector3.zero, Quaternion.identity);
                         break;
                 }
             }

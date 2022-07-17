@@ -24,8 +24,10 @@ public class Player : MonoBehaviour
 
     public GameObject hint;
     public GameObject lvlTextObj;
+    public GameObject healthManager;
 
     private Animator animator;
+    private Characteristics healthViewer;
 
     // Start is called before the first frame update
     void Start()
@@ -34,7 +36,7 @@ public class Player : MonoBehaviour
         lvltext = lvlTextObj.GetComponent<Text>();
         animatedPlayer = transform.GetChild(0).gameObject;
         animator = animatedPlayer.GetComponent<Animator>();
-        
+        healthViewer = healthManager.GetComponent<Characteristics>();
         if (lvl == 0)
         {
             hint.SetActive(true);
@@ -68,7 +70,7 @@ public class Player : MonoBehaviour
         {
             Dice.rolling = true;
         }
-        
+        healthViewer.amount = health;
     }
     
     void FixedUpdate()
