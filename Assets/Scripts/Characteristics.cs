@@ -22,7 +22,7 @@ public class Characteristics : MonoBehaviour
                 sprites[i].enabled = true;
             }
         }
-        if(amount< sprites.Length)
+        if(amount< sprites.Length && amount>-1)
         { 
             for(int i=amount; i< sprites.Length; i++)
             {

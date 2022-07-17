@@ -48,6 +48,6 @@ MonoBehaviour:
   minAmount: 5
   maxAmount: 10
   maxDelay: 2
-  maxX: 3.5
-  maxY: 4.5
+  maxX: 6.5
+  maxY: 3.5
   safeZone: 3

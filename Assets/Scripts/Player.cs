@@ -16,6 +16,7 @@ public class Player : MonoBehaviour
     private GameObject animatedPlayer;
 
     public GameObject dyingScriptObj;
+    public GameObject winingScriptObj;
 
     private Rigidbody2D rb;
     private SpriteRenderer sprite;
@@ -24,6 +25,7 @@ public class Player : MonoBehaviour
     private Text keytext;
     private Text goaltext;
     private Die dyingScript;
+    private Win winingScript;
 
 
     public GameObject hint;
@@ -44,6 +46,7 @@ public class Player : MonoBehaviour
         animator = animatedPlayer.GetComponent<Animator>();
         healthViewer = healthManager.GetComponent<Characteristics>();
         dyingScript = dyingScriptObj.GetComponent<Die>();
+        winingScript = winingScriptObj.GetComponent<Win>();
 
         keytext.text = "Keys needed: " + keysRequired;
         if (lvl == 0)
@@ -105,17 +108,23 @@ public class Player : MonoBehaviour
         switch (lvl) // расчет кол-ва требуемых ключей на следующем уровне
         {
             case 3:
-                keysRequired += 1;
-                break;
-            case 5:
+                    keysRequired += 1;
+                    break;
+                case 5:
                 keysRequired += 1;
                 break;
             case 7:
                 keysRequired += 1;
                 break;
-            default:
-                break;
-        }
+            case 8:
+                 keysRequired += 1;
+                    break;
+            case 9:
+                    keysRequired += 1;
+                    break;
+                default:
+                    break;
+            }
         Scene scene = SceneManager.GetActiveScene(); // перезапускаем текущую сцену
         SceneManager.LoadScene(scene.name);
             }
