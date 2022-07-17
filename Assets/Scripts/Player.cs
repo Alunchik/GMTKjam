@@ -21,12 +21,14 @@ public class Player : MonoBehaviour
     private SpriteRenderer sprite;
 
     private Text lvltext;
+    private Text keytext;
     private Text goaltext;
     private Die dyingScript;
 
 
     public GameObject hint;
     public GameObject lvlTextObj;
+    public GameObject keysTextObj;
     public GameObject healthManager;
 
     private Animator animator;
@@ -37,10 +39,13 @@ public class Player : MonoBehaviour
     {
         rb = GetComponent<Rigidbody2D>();
         lvltext = lvlTextObj.GetComponent<Text>();
+        keytext = keysTextObj.GetComponent<Text>();
         animatedPlayer = transform.GetChild(0).gameObject;
         animator = animatedPlayer.GetComponent<Animator>();
         healthViewer = healthManager.GetComponent<Characteristics>();
         dyingScript = dyingScriptObj.GetComponent<Die>();
+
+        keytext.text = "Keys needed: " + keysRequired;
         if (lvl == 0)
         {
             hint.SetActive(true);
