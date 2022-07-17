@@ -48,8 +48,8 @@ MonoBehaviour:
   minAmount: 20
   maxAmount: 30
   maxDelay: 5
-  maxX: 3.5
-  maxY: 4.5
+  maxX: 6.5
+  maxY: 3.5
   maxSize: 2.5
   minSize: 0.7
   size: 0
