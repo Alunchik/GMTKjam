@@ -6,18 +6,18 @@
   <component name="ChangeListManager">
     <list default="true" id="0273ac4c-1303-4cb4-9b70-436220f1a51b" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.GMTKjam/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.GMTKjam/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prephabs/ArrowStorm.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prephabs/ArrowStorm.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prephabs/MeteorRain.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prephabs/MeteorRain.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prephabs/ShootingMonster.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prephabs/ShootingMonster.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prephabs/SpawnMeleeMonsters.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prephabs/SpawnMeleeMonsters.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prephabs/SpawnShootingMonsters.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prephabs/SpawnShootingMonsters.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prephabs/monsterOcto.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prephabs/monsterOcto.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Alla'sScene.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Alla'sScene.unity" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/ArrowStorm.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/ArrowStorm.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Dice.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Dice.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/Die.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Die.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/EnemyHPSystem.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/EnemyHPSystem.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/MeteorRain.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/MeteorRain.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/Player.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Player.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Projectile.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Projectile.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/Saw.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Saw.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/SpawningEnemy.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/SpawningEnemy.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Trap.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Trap.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProjectSettings/EditorBuildSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/EditorBuildSettings.asset" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -56,6 +56,14 @@
   }
 }</component>
   <component name="RunManager" selected="Attach to Unity Editor.Attach to Unity Editor">
+    <configuration name="Standalone Player" type="RunUnityExe" factoryName="Unity Executable">
+      <option name="EXE_PATH" value="$USER_HOME$/Desktop/gamejam\GMTKjam.exe" />
+      <option name="PROGRAM_PARAMETERS" value="" />
+      <option name="WORKING_DIRECTORY" value="C:\Users\Денис Петренко\Desktop\gamejam" />
+      <option name="PASS_PARENT_ENVS" value="1" />
+      <option name="USE_EXTERNAL_CONSOLE" value="0" />
+      <method v="2" />
+    </configuration>
     <configuration name="UnitTests (batch mode)" type="RunUnityExe" factoryName="Unity Executable">
       <option name="EXE_PATH" value="C:\Program Files\Unity\Hub\Editor\2021.3.6f1\Editor\Unity.exe" />
       <option name="PROGRAM_PARAMETERS" value="-runTests -batchmode -projectPath &quot;C:\Users\Денис Петренко\Documents\GitHub\GMTKjam&quot; -testResults Logs/results.xml -testPlatform EditMode -debugCodeOptimization" />
@@ -99,6 +107,7 @@
       <workItem from="1657982842806" duration="4623000" />
       <workItem from="1657990246483" duration="3680000" />
       <workItem from="1658052697698" duration="4359000" />
+      <workItem from="1658079563929" duration="1642000" />
     </task>
     <servers />
   </component>

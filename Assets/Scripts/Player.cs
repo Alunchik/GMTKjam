@@ -1,6 +1,3 @@
-using System;
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 using UnityEngine.SceneManagement;
@@ -12,7 +9,7 @@ public class Player : MonoBehaviour
     public static int keysRequired = 1;
     public int health = 5;
     public int damage = 1;
-    public int keys = 0; //  ���� �� ����
+    public int keys = 0;
     private GameObject animatedPlayer;
 
     public GameObject dyingScriptObj;
@@ -64,12 +61,9 @@ public class Player : MonoBehaviour
 
     private void Update()
     {
-        if (health <= 0) // смерть
+        if (health <= 0)
         {
-            //Destroy(gameObject);
-            //gameObject.SetActive(false);
             dyingScript.isDied = true;
-
         }
         
         if (rb.velocity.magnitude < 0.1f && animator.GetBool("isRunning"))
@@ -101,11 +95,11 @@ public class Player : MonoBehaviour
             health -= (int)projectile.damage;
         }
 
-        if (col.CompareTag("Door") && keys >= keysRequired) // переход на след. уровень
+        if (col.CompareTag("Door") && keys >= keysRequired)
         { 
         keys = 0;
         lvl += 1;
-        switch (lvl) // расчет кол-ва требуемых ключей на следующем уровне
+        switch (lvl)
         {
             case 3:
                 keysRequired += 1;
@@ -125,9 +119,9 @@ public class Player : MonoBehaviour
             default:
                 break;
             }
-        Scene scene = SceneManager.GetActiveScene(); // перезапускаем текущую сцену
+        Scene scene = SceneManager.GetActiveScene();
         SceneManager.LoadScene(scene.name);
-            }
+        }
 
     }
 
