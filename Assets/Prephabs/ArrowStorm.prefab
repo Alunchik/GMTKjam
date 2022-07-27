@@ -45,6 +45,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   arrowRef: {fileID: 2600444808504681787, guid: 38677e74f0b47bb48a79360632d210a3, type: 3}
-  minAmount: 15
-  maxAmount: 30
+  minAmount: 8
+  maxAmount: 12
   maxDelay: 5

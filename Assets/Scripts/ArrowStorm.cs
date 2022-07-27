@@ -1,5 +1,4 @@
 using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
 public class ArrowStorm : MonoBehaviour
@@ -13,7 +12,7 @@ public class ArrowStorm : MonoBehaviour
     void Start()
     {
         player = GameObject.Find("Player").transform;
-        int amount = Random.Range(minAmount, maxAmount + 1);
+        int amount = Random.Range(minAmount + 3 * Player.lvl, maxAmount + Player.lvl * 4);
         for (int i = 0; i < amount; i++)
         {
             StartCoroutine(MakeArrow());

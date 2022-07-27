@@ -45,8 +45,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   meteorRef: {fileID: 4539113207336270761, guid: 409fc2001e4c3a34ba07be49c8bb7a4c, type: 3}
-  minAmount: 20
-  maxAmount: 30
+  minAmount: 5
+  maxAmount: 8
   maxDelay: 5
   maxX: 6.5
   maxY: 3.5

@@ -45,8 +45,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   enemyRef: {fileID: 280906388157231761, guid: 043037b0bfb310148ae52ab3b7aa34ee, type: 3}
-  minAmount: 5
-  maxAmount: 10
+  minAmount: 1
+  maxAmount: 4
   maxDelay: 2
   maxX: 6.5
   maxY: 3.5

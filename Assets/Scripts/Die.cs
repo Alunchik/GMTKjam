@@ -1,5 +1,3 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
@@ -43,7 +41,7 @@ void Update()
                 {
                     Player.lvl = 1;
                 }
-                Player.keysRequired = 0;
+                Player.keysRequired = 1;
                 Scene scene = SceneManager.GetActiveScene();
                 SceneManager.LoadScene(scene.name);
                 Time.timeScale = 1f;

@@ -1,5 +1,4 @@
 using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
 public class MeteorRain : MonoBehaviour
@@ -18,7 +17,7 @@ public class MeteorRain : MonoBehaviour
     void Start()
     {
         player = GameObject.Find("Player").transform;
-        int amount = Random.Range(minAmount, maxAmount + 1);
+        int amount = Random.Range(minAmount +  Player.lvl, maxAmount + 3 * Player.lvl);
         for (int i = 0; i < amount; i++)
         {
             StartCoroutine(MakeMeteor());
