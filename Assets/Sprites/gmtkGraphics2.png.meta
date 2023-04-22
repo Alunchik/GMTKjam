@@ -1,0 +1,848 @@
+fileFormatVersion: 2
+guid: a3f9ccb54a1fd984f841bbf6f153fbf7
+TextureImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 11
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMasterTextureLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Server
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: gmtkGraphics2_0
+      rect:
+        serializedVersion: 2
+        x: 547
+        y: 433
+        width: 65
+        height: 72
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 881aca7c8b9b9fc4fbc78cd9848b4cd9
+      internalID: 421541163
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gmtkGraphics2_1
+      rect:
+        serializedVersion: 2
+        x: 845
+        y: 496
+        width: 18
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 24786fd1d3bff8e459d97c443f6fae75
+      internalID: 1914770853
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gmtkGraphics2_2
+      rect:
+        serializedVersion: 2
+        x: 865
+        y: 502
+        width: 11
+        height: 5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 139ef114be32dc549af55599233d8f8d
+      internalID: 1692723961
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gmtkGraphics2_3
+      rect:
+        serializedVersion: 2
+        x: 9
+        y: 404
+        width: 98
+        height: 98
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5879f167433a2704ca3965846353c840
+      internalID: 813903759
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gmtkGraphics2_4
+      rect:
+        serializedVersion: 2
+        x: 114
+        y: 404
+        width: 98
+        height: 98
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 94aead5e02c1a424c8bf1bd7e6e2a2f6
+      internalID: 625379991
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gmtkGraphics2_5
+      rect:
+        serializedVersion: 2
+        x: 233
+        y: 430
+        width: 61
+        height: 61
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c2271e7edc655dc48a3a27858f0d5116
+      internalID: -1995520407
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gmtkGraphics2_6
+      rect:
+        serializedVersion: 2
+        x: 330
+        y: 432
+        width: 75
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6871260806c58344b9fae575a0f65d2e
+      internalID: 1272501347
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gmtkGraphics2_7
+      rect:
+        serializedVersion: 2
+        x: 440
+        y: 422
+        width: 73
+        height: 73
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dd008cb54a3413a48b76395afece8424
+      internalID: -144074206
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gmtkGraphics2_8
+      rect:
+        serializedVersion: 2
+        x: 634
+        y: 457
+        width: 24
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 969c7dad640245145a6144b6c4ceac1b
+      internalID: -739214490
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gmtkGraphics2_9
+      rect:
+        serializedVersion: 2
+        x: 698
+        y: 407
+        width: 80
+        height: 79
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3b42cff4eabdae548a3b85908b0655f3
+      internalID: -1951876527
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gmtkGraphics2_10
+      rect:
+        serializedVersion: 2
+        x: 825
+        y: 393
+        width: 111
+        height: 94
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 18b5ad167bce860468198355e4622a8d
+      internalID: -315947478
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gmtkGraphics2_11
+      rect:
+        serializedVersion: 2
+        x: 636
+        y: 419
+        width: 13
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a0fbc544502894b4d93d59439fb967bb
+      internalID: 1733498615
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gmtkGraphics2_12
+      rect:
+        serializedVersion: 2
+        x: 9
+        y: 298
+        width: 98
+        height: 98
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 976aaa2ae52f8b44589d74bcbf8001aa
+      internalID: -465079927
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gmtkGraphics2_13
+      rect:
+        serializedVersion: 2
+        x: 847
+        y: 313
+        width: 24
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 764da748bc6e3ea4580078cae0b32345
+      internalID: 516707135
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gmtkGraphics2_14
+      rect:
+        serializedVersion: 2
+        x: 942
+        y: 282
+        width: 58
+        height: 61
+      alignment: 9
+      pivot: {x: 0.5206046, y: 0.46081492}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c6a3e06a4d6f4564cb941db0c796a93f
+      internalID: 71339992
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gmtkGraphics2_15
+      rect:
+        serializedVersion: 2
+        x: 815
+        y: 285
+        width: 18
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 41ca35cb3bf237442953879df468b3ad
+      internalID: -1510487478
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gmtkGraphics2_16
+      rect:
+        serializedVersion: 2
+        x: 855
+        y: 274
+        width: 25
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 99eee3ce0b29cb24087f3b70b9639bfd
+      internalID: 996680870
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gmtkGraphics2_17
+      rect:
+        serializedVersion: 2
+        x: 22
+        y: 199
+        width: 27
+        height: 63
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6c154537acb17dd4d8fa286345ae73d7
+      internalID: 222540529
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gmtkGraphics2_18
+      rect:
+        serializedVersion: 2
+        x: 97
+        y: 219
+        width: 48
+        height: 34
+      alignment: 9
+      pivot: {x: 0.8236844, y: 0.18363863}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c9d9804b364662143a158df435bc844c
+      internalID: 1580574131
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gmtkGraphics2_19
+      rect:
+        serializedVersion: 2
+        x: 831
+        y: 250
+        width: 17
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1c339d59a04eebe479ce13d2442fdc85
+      internalID: 659929944
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gmtkGraphics2_20
+      rect:
+        serializedVersion: 2
+        x: 924
+        y: 62
+        width: 98
+        height: 196
+      alignment: 9
+      pivot: {x: 0.49999937, y: 0.12499288}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e8e4b089c4a4ed84096622e22c6fc355
+      internalID: -279280392
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gmtkGraphics2_21
+      rect:
+        serializedVersion: 2
+        x: 159
+        y: 231
+        width: 25
+        height: 17
+      alignment: 9
+      pivot: {x: 0.11755371, y: 0.2187886}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ba1702ecd6d57f14da33b86c30b9d9ea
+      internalID: -1173101048
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gmtkGraphics2_22
+      rect:
+        serializedVersion: 2
+        x: 157
+        y: 217
+        width: 26
+        height: 10
+      alignment: 9
+      pivot: {x: 0.08629549, y: 0.440242}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bd1f57beb07dd5b44a2c1b132a0079a0
+      internalID: -2017031422
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gmtkGraphics2_23
+      rect:
+        serializedVersion: 2
+        x: 157
+        y: 201
+        width: 25
+        height: 11
+      alignment: 9
+      pivot: {x: 0.16535889, y: 0.55432266}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5e160e24d0c34e743bdf928b162ef42b
+      internalID: 2144212130
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gmtkGraphics2_24
+      rect:
+        serializedVersion: 2
+        x: 15
+        y: 122
+        width: 48
+        height: 44
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e95e11a6f0d43c044b1b9aa4db8f3510
+      internalID: -168155792
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gmtkGraphics2_25
+      rect:
+        serializedVersion: 2
+        x: 123
+        y: 50
+        width: 50
+        height: 73
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6290cce73303d224c988c11ac25165f1
+      internalID: -1086639283
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gmtkGraphics2_26
+      rect:
+        serializedVersion: 2
+        x: 17
+        y: 29
+        width: 26
+        height: 57
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 97611c5e6dbacab459dd88627eab4936
+      internalID: 2145280829
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gmtkGraphics2_27
+      rect:
+        serializedVersion: 2
+        x: 52
+        y: 30
+        width: 28
+        height: 56
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3e2fb222d9ae3164a81671ea13f80687
+      internalID: 1945011273
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gmtkGraphics2_28
+      rect:
+        serializedVersion: 2
+        x: 194
+        y: 73
+        width: 13
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e018a8c80912a7940bb37f3fea5929a4
+      internalID: -1687472536
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gmtkGraphics2_29
+      rect:
+        serializedVersion: 2
+        x: 221
+        y: 66
+        width: 24
+        height: 37
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0986d90fcaa59674fb0f584286947081
+      internalID: 1635736639
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gmtkGraphics2_30
+      rect:
+        serializedVersion: 2
+        x: 627
+        y: 27
+        width: 77
+        height: 66
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f6104c22abe44124dab0fcbfb590ef73
+      internalID: -813582445
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gmtkGraphics2_31
+      rect:
+        serializedVersion: 2
+        x: 750
+        y: 27
+        width: 121
+        height: 78
+      alignment: 9
+      pivot: {x: 0.499999, y: 0.44637197}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e34b11c6edb40df4e8a393b01e5d1032
+      internalID: -8137985
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gmtkGraphics2_32
+      rect:
+        serializedVersion: 2
+        x: 983
+        y: 51
+        width: 15
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5635da3a81cc40741a87c287340fe671
+      internalID: -445911497
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    nameFileIdTable:
+      gmtkGraphics2_13: 516707135
+      gmtkGraphics2_14: 71339992
+      gmtkGraphics2_19: 659929944
+      gmtkGraphics2_25: -1086639283
+      gmtkGraphics2_21: -1173101048
+      gmtkGraphics2_17: 222540529
+      gmtkGraphics2_3: 813903759
+      gmtkGraphics2_5: -1995520407
+      gmtkGraphics2_9: -1951876527
+      gmtkGraphics2_29: 1635736639
+      gmtkGraphics2_26: 2145280829
+      gmtkGraphics2_30: -813582445
+      gmtkGraphics2_28: -1687472536
+      gmtkGraphics2_11: 1733498615
+      gmtkGraphics2_12: -465079927
+      gmtkGraphics2_0: 421541163
+      gmtkGraphics2_6: 1272501347
+      gmtkGraphics2_18: 1580574131
+      gmtkGraphics2_7: -144074206
+      gmtkGraphics2_10: -315947478
+      gmtkGraphics2_23: 2144212130
+      gmtkGraphics2_15: -1510487478
+      gmtkGraphics2_20: -279280392
+      gmtkGraphics2_1: 1914770853
+      gmtkGraphics2_27: 1945011273
+      gmtkGraphics2_4: 625379991
+      gmtkGraphics2_22: -2017031422
+      gmtkGraphics2_8: -739214490
+      gmtkGraphics2_16: 996680870
+      gmtkGraphics2_24: -168155792
+      gmtkGraphics2_32: -445911497
+      gmtkGraphics2_31: -8137985
+      gmtkGraphics2_2: 1692723961
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
